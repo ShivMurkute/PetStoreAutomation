@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="api.utilitise.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/CEPL/IdeaProjects/PetStoreAutomation/src/test/java/api/test"><classes>
+       <!-- <class name="api.test.DDTest">
+        <methods><include name="testPostUser"/><include name="testDeleteuser"/>-->
+       <!-- </methods></class><class name="api.test.UserTest"><methods>-->
+   <class name="api.test.UserTest2"><methods>
+        <include name="testCreateuser"/><include name="testReaduser"/>
+      <include name="testUpdateuser"/><include name="testdeleteuserbyName"/>
+    </methods>
+    </class>
+    </classes>
+    </test>
+</suite>
